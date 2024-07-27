@@ -1,0 +1,29 @@
+@use "config/variables" as var;
+@use "config/mixins" as mix;
+
+.about-event {
+  background-color: var.$primary-color;
+
+  &__grid {
+    @include mix.tablet {
+      @include mix.grid(2, 5rem);
+    }
+  }
+
+  &__picture {
+    display: flex;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var.$white;
+  }
+
+  &__date {
+    font-size: 2rem;
+    color: var.$secondary-color;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MusicFestival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top-bar header__container">
+        <a href="index.html" class="header__logo">
+          <h2 class="header__logo-title">
+            EDM<span class="header__logo-title--span">Festival</span>
+          </h2>
+        </a>
+
+        <button class="hamburguer-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep hamburguer-btn__icon"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 6h16" />
+            <path d="M7 12h13" />
+            <path d="M10 18h10" />
+          </svg>
+        </button>
+
+        <nav class="nav">
+          <a href="#lineup" class="nav__link">LineUp</a>
+          <a href="#gallery" class="nav__link">Galería</a>
+          <a href="#tickets" class="nav__link">Boletos</a>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero__overlay">
+        <div class="hero__content hero__container">
+          <h2 class="hero__heading">2 días de<span>Conciertos </span></h2>
+          <p class="hero__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
+            dolorem.
+          </p>
+          <a href="#" class="hero__btn">Explorar</a>
+        </div>
+      </div>
+      <video class="hero__video" autoplay muted loop>
+        <source src="./assets/video/bg/concert.mp4" type="video/mp4" />
+        <source src="./assets/video/bg/concert.ogg" type="video/ogg" />
+        <source src="./assets/video/bg/concert.webm" type="video/webm" />
+      </video>
+    </section>
+    <section class="section-date section-date__section">
+      <div class="section-date__content section-date__container">
+        <time class="section-date__datetime" datetime="2026-08-20"
+          >20 / Ago / 26</time
+        >
+        <p class="section-date__location">Estadio Español, Madrid</p>
+      </div>
+    </section>
+    <section class="about-event about-event__section">
+      <div class="about-event__grid about-event__container">
+        <picture class="about-event__picture">
+          <source srcset="./assets/img/imagen_dj.avif" type="image/avif" />
+          <source srcset="./assets/img/imagen_dj.webp" type="image/webp" />
+          <img
+            class="about-event__img"
+            loading="lazy"
+            width="500"
+            height="300"
+            src="./assets/img/imagen_dj.jpg"
+            alt=""
+          />
+        </picture>
+        <div class="about-event__content">
+          <h2 class="about-event__heading">EDMFestival</h2>
+          <time class="about-event__date" datetime="2026-08-20">
+            20 / Agosto / 2026
+          </time>
+          <p class="about-event__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+            aspernatur culpa alias asperiores, dolores molestias qui? Possimus
+            ex unde laborum illo ut sunt eum, enim cum, aspernatur aliquid
+            aperiam facilis!
+          </p>
+        </div>
+      </div>
+    </section>
+    <main class="artists artists__section" id="lineup">
+      <h2 class="artists__heading">Artistas <span>Invitados</span></h2>
+
+      <div class="artists__grid artists__container">
+        <div class="card-artists">
+          <p class="card-artists__day">Día 1</p>
+
+          <ul class="card-artists__shedules">
+            <li class="card-artists__artist">00:00 | <span>KSHMIR</span></li>
+            <li class="card-artists__artist">22:00 | <span>Carl Cox</span></li>
+            <li class="card-artists__artist">20:00 | <span>HI-LO</span></li>
+            <li class="card-artists__artist">
+              19:00 | <span>Amelie Lens</span>
+            </li>
+            <li class="card-artists__artist">18:00 | <span>VINAI</span></li>
+            <li class="card-artists__artist">17:00 | <span>ARTBAT</span></li>
+          </ul>
+        </div>
+
+        <div class="card-artists">
+          <p class="card-artists__day">Día 2</p>
+
+          <ul class="card-artists__shedules">
+            <li class="card-artists__artist">
+              00:00 | <span>David Guetta</span>
+            </li>
+            <li class="card-artists__artist">22:00 | <span>Tïesto</span></li>
+            <li class="card-artists__artist">
+              20:00 | <span>Martin Garrix</span>
+            </li>
+            <li class="card-artists__artist">
+              19:00 | <span>Steve Aoki</span>
+            </li>
+            <li class="card-artists__artist">18:00 | <span>Afrojack</span></li>
+            <li class="card-artists__artist">
+              17:00 | <span>Vintage Culture</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <section class="tickets tickets__section">
+      <h2 class="tickets__heading">
+        Obten boletos para el <span>EDMFestival</span>
+      </h2>
+      <div class="tickets__grid tickets__container"></div>
+    </section>
+    <footer class="footer">
+      <p class="footer__text">
+        &copy; 2022 EDMFestival. Todos los derechos reservados.
+      </p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

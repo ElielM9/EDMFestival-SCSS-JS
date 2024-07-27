@@ -1,0 +1,14 @@
+@use "config/variables" as var;
+@use "config/mixins" as mix;
+
+.tickets {
+  background-color: var.$secondary-color;
+
+  &__heading {
+    @include mix.heading;
+
+    span {
+      color: var.$black;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@use "config/variables" as var;
+@use "config/mixins" as mix;
+
+.section-date {
+  background-color: var.$secondary-color;
+
+  &__content {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__datetime {
+    font-size: 5rem;
+    margin-top: 2rem;
+
+    @include mix.tablet {
+      font-size: 7rem;
+    }
+  }
+
+  &__location {
+    margin: .5rem;
+
+    @include mix.tablet {
+      font-size: 3rem;
+    }
+  }
+}
