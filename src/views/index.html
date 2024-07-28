@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MusicFestival</title>
+    <title>EDMFest</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -42,8 +42,8 @@
 
         <nav class="nav">
           <a href="#lineup" class="nav__link">LineUp</a>
-          <a href="#gallery" class="nav__link">Galería</a>
           <a href="#tickets" class="nav__link">Boletos</a>
+          <a href="#gallery" class="nav__link">Galería</a>
         </nav>
       </div>
     </header>
@@ -141,11 +141,47 @@
         </div>
       </div>
     </main>
-    <section class="tickets tickets__section">
+    <section class="tickets tickets__section" id="tickets">
       <h2 class="tickets__heading">
         Obten boletos para el <span>EDMFestival</span>
       </h2>
-      <div class="tickets__grid tickets__container"></div>
+      <div class="tickets__grid tickets__container">
+        <div class="card-ticket">
+          <h3 class="card-ticket__name">Básico</h3>
+          <p class="card-ticket__price">$250</p>
+          <ul class="card-ticket__content">
+            <li>Entrada de 1 día</li>
+            <li>Acceso a la sala</li>
+            <li>Pase para todos los artistas</li>
+          </ul>
+          <a class="card-ticket__btn">Comprar</a>
+        </div>
+
+        <div class="card-ticket">
+          <h3 class="card-ticket__name">Regular</h3>
+          <p class="card-ticket__price">$300</p>
+          <ul class="card-ticket__content">
+            <li>Entrada de 2 días</li>
+            <li>Acceso a la sala</li>
+            <li>Pase para todos los artistas</li>
+            <li>Acceso a la galería</li>
+          </ul>
+          <a class="card-ticket__btn">Comprar</a>
+        </div>
+
+        <div class="card-ticket">
+          <h3 class="card-ticket__name">Premium</h3>
+          <p class="card-ticket__price">$350</p>
+          <ul class="card-ticket__content">
+            <li>Entrada todos los días</li>
+            <li>Acceso a la sala</li>
+            <li>Pase para todos los artistas</li>
+            <li>Acceso a la galería</li>
+            <li>Acceso a las sesiones de conciertos</li>
+          </ul>
+          <a class="card-ticket__btn">Comprar</a>
+        </div>
+      </div>
     </section>
     <footer class="footer">
       <p class="footer__text">

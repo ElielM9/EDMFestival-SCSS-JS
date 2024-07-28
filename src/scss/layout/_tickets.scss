@@ -11,4 +11,12 @@
       color: var.$black;
     }
   }
+
+  &__grid {
+    margin-top: 3rem;
+    @include mix.grid(1, 5rem);
+    @include mix.tablet {
+      @include mix.grid(3, 2rem);
+    }
+  }
 }

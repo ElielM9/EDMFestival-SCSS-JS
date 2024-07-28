@@ -1,0 +1,42 @@
+@use "config/variables" as var;
+@use "config/mixins" as mix;
+
+.card-ticket {
+  border: 0.1rem solid var.$primary-color;
+  padding: 2rem 0;
+  background-color: var.$secondary-color;
+  overflow: hidden;
+  text-align: center;
+
+  @include mix.hover(transform, 0.3s, ease-in-out) {
+    transform: scale(1.2);
+  }
+
+  &__name {
+    padding-bottom: 2rem;
+    color: var.$black;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    margin: 0;
+    padding: 2rem 0;
+    background-color: var.$primary-color;
+    color: var.$secondary-color;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+
+  &__content {
+    border-bottom: 0.1rem solid var.$primary-color;
+    min-height: 18rem;
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  &__btn {
+    @include mix.button(var.$primary-color, var.$white);
+  }
+}
