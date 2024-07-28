@@ -15,8 +15,11 @@
     }
   }
 
+  &__picture {
+    border: 0.3rem solid var.$secondary-color;
+  }
+
   &__img {
     height: 100%;
-    border: 0.3rem solid var.$secondary-color;
   }
 }

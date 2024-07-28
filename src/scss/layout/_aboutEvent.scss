@@ -12,6 +12,7 @@
 
   &__picture {
     display: flex;
+    border: .3rem solid var.$secondary-color;
   }
 
   &__content {
