@@ -1,0 +1,22 @@
+@use "config/variables" as var;
+@use "config/mixins" as mix;
+
+.gallery {
+  background-color: var.$primary-color;
+
+  &__heading {
+    @include mix.heading;
+  }
+
+  &__grid {
+    @include mix.grid(2, 2rem);
+    @include mix.tablet {
+      @include mix.grid(4, 2rem);
+    }
+  }
+
+  &__img {
+    height: 100%;
+    border: 0.3rem solid var.$secondary-color;
+  }
+}
